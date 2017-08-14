@@ -13,6 +13,7 @@ app.get('/one',function(req,res){
 });
 app.get('/Ram', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'DSC02940.JPG'));
+  res.send("4-licks");
 });
 
 app.get('/ui/style.css', function (req, res) {
