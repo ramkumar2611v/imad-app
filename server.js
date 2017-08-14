@@ -11,6 +11,9 @@ app.get('/', function (req, res) {
 app.get('/one',function(req,res){
    res.send("2-licks"); 
 });
+app.get('/Ram', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'DSC02940.JPG'));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
