@@ -19,7 +19,7 @@ submit.onclick=function(){
     for(var i=0;i<names.length;i++){
         list+="<li>"+names[i]+"</li>";
     }
-    var ul="nameslist";
+    var ul=document.getElementById("namelist");
     ul.innerHTML=list;
     
 };
