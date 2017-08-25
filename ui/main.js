@@ -21,15 +21,15 @@ submit.onclick=function(){
           if(request.status===200){
                var names=request.responseText;
                names=JSON.parse(names);
-                for(var i=1;i<names.length;i++){
-                     list+='<li>'+names[i]+'</li>';
+                for(var i=0; i<names.length; i++){
+                     list+="<li"+names[i]+"</li>";
                     }
                     
                 
           }
       }  
     };
-    var ul=document.getElementById('list');
+    var ul=document.getElementById("list");
     ul.innerHTML=list;
    
     var nameinput=document.getElementById("name");
