@@ -30,7 +30,7 @@ submit.onclick=function(){
     };
     
     var ul=document.getElementById('list');
-    ul.innerHTML=list;
+    ul.innerHTML=list.toString();
     var nameinput=document.getElementById("name");
     var name=nameinput.value;
     request.open('GET',"http://ramkumar2611v.imad.hasura-app.io/submit-name?name=" + name,true);
