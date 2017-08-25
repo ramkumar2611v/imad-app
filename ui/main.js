@@ -7,10 +7,3 @@ element.onclick=function()
   element.innerHTML="RAM KUMAR";
 };
 var img= document.getElementById('img');
-var marginleft=0;
-function moveright()
-{
-    marginleft=marginleft+10;
-    img.style.marginLeft=marginleft+'px';
-}
-img.onclick=setInterval(moveright,100);
