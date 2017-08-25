@@ -9,8 +9,7 @@ button.onclick = function(){
     count.innerHTML=counter.toString();
 };
 
-var nameinput=document.getElementById("name");
-var name=nameinput.value;
+
 var submit=document.getElementById("submit_btn");
 submit.onclick=function(){
     
@@ -31,6 +30,8 @@ submit.onclick=function(){
           }
       }  
     };
+    var nameinput=document.getElementById("name");
+    var name=nameinput.value;
     request.open('GET',"http://ramkumar2611v.imad.hasura-app.io/submit-name?name=" + name,true);
     request.send(null);
     
