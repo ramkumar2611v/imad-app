@@ -1,9 +1,10 @@
 console.log('Loaded!');
 
-var element = document.getElementById("main-text");
-element.onclick=function()
-{
-  alert("You've Clicked Text.");
-  element.innerHTML="RAM KUMAR";
+var button=document.getElementById("counter");
+var count=document.getElementById("count");
+var counter=0;
+
+button.onclick = function(){
+    counter=counter+1;
+    count.innerHTML=counter.toString();
 };
-var img= document.getElementById('img');
