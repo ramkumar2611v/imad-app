@@ -25,7 +25,7 @@ submit.onclick=function(){
                      list+='<li>'+names[i]+'</li>';
                     }
                 var ul=document.getElementById('namelist');
-                ul.innerHTML=list.toString();
+                ul.innerHTML=list;
    
           }
       }  
