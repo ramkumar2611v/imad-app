@@ -24,12 +24,13 @@ submit.onclick=function(){
                 for(var i=0;i<names.length;i++){
                      list+='<li>'+names[i]+'</li>';
                     }
-                var ul=document.getElementById('list');
-                ul.innerHTML=list;
    
           }
       }  
     };
+    
+    var ul=document.getElementById('list');
+    ul.innerHTML=list;
     var nameinput=document.getElementById("name");
     var name=nameinput.value;
     request.open('GET',"http://ramkumar2611v.imad.hasura-app.io/submit-name?name=" + name,true);
