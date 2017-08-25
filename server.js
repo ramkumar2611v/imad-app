@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/counter',function(req,res){
-  res.send(counter);
+  res.send(counter.toString());
 });
 app.get('/one',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'one.html'));
