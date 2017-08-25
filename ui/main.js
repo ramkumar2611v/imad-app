@@ -30,7 +30,7 @@ submit.onclick=function(){
           }
       }  
     };
-    request.open('GET',"http://ramkumar2611v.imad.hasura-app.io/submit-name?name=" + nameinput,true);
+    request.open('GET',"http://ramkumar2611v.imad.hasura-app.io/submit-name?name=" + name,true);
     request.send(null);
     
 };
